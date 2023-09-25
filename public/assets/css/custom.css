@@ -1,0 +1,68 @@
+.app-box {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	font-size: 26px;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #f6f6f6
+}
+
+
+.app-title {
+	font-size: 18px
+}
+
+.bg-gradient-cosmic {
+	background: linear-gradient(to right, #8e2de2, #4a00e0)!important
+}
+
+.bg-gradient-burning {
+	background: linear-gradient(to right, #ff416c, #ff4b2b)!important
+}
+
+.bg-gradient-lush {
+	background: linear-gradient(to right, #56ab2f, #a8e063)!important
+}
+
+.bg-gradient-kyoto {
+	background: linear-gradient(to right, #f7971e, #ffd200)!important
+}
+
+.bg-gradient-blues {
+	background: linear-gradient(to right, #56ccf2, #2f80ed)!important
+}
+
+.bg-gradient-moonlit {
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364)!important
+}
+a.router-link-exact-active{
+	color: #04c0ff;
+  }
+
+  li a {
+	color: grey
+  }
+  li a :hover{
+	color: #535454;
+  }
+  /* image picker  */
+  .image-container {
+    position: relative;
+}
+
+.remove-button {
+	color: #ccd2d8;
+	top: -13px;
+	left:100px;
+    position: absolute;
+	cursor: pointer;
+}
+.image-input{
+	position: absolute;
+	top: 8px;
+	bottom: -20px;
+	z-index: 999;
+}

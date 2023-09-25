@@ -1,0 +1,56 @@
+{
+   "data": [
+        {
+            "id": 8,
+            "name": "ghgh",
+            "email": "user@gmail.com",
+            "address": "TEST 3",
+            "phone": "2222222222",
+            "salary": "2525",
+            "nid": "55",
+            "image": null,
+            "status": 1,
+            "created_at": "2023-09-14T00:00:00.000000Z",
+            "updated_at": null
+        },
+        {
+            "id": 7,
+            "name": "Sam",
+            "email": "sam@gmail.com",
+            "address": "japan",
+            "phone": "6593563535",
+            "salary": "20000",
+            "nid": "29376",
+            "image": "20230914104808.png",
+            "status": 1,
+            "created_at": "2023-09-14T00:00:00.000000Z",
+            "updated_at": null
+        },
+        {
+            "id": 6,
+            "name": "mia",
+            "email": "mia@gmail.com",
+            "address": "germany",
+            "phone": "1243567233",
+            "salary": "20000",
+            "nid": "32645",
+            "image": "20230914071757.png",
+            "status": 1,
+            "created_at": "2023-09-14T00:00:00.000000Z",
+            "updated_at": null
+        },
+        {
+            "id": 5,
+            "name": "john",
+            "email": "john@cookee.io",
+            "address": "usa",
+            "phone": "6353425633",
+            "salary": "10000",
+            "nid": "54236",
+            "image": "20230914071525.png",
+            "status": 1,
+            "created_at": "2023-09-14T00:00:00.000000Z",
+            "updated_at": null
+        }
+    ]
+}
