@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="text-end">
-                            <button class="btn btn-success" type="submit">Add Salary</button>
+                            <button class="btn btn-success" type="submit">Update Salary</button>
                         </div>
                     </form>
                     <!-- end row -->
@@ -95,6 +95,14 @@ export default {
                 this.employers = res.data
             })
 
+        if (id) {
+            axios.get('/api/salary/edit_salary/'+id)
+                .then(res => {
+                    console.log(res.data);
+                    this.form = res.data
+                })
+        }
+
 
     },
     methods: {
@@ -102,13 +110,13 @@ export default {
             let id = this.$route.params.id;
             //updating
             if (id > 0) {
-                axios.patch('/api/supplier/update_supplier/' + id, this.form)
+                axios.patch('/api/salary/update_salary/' + id, this.form)
                     .then(res => {
                         console.log(res);
-                        this.$router.push('/all_supplier')
+                        this.$router.push('/all_salary')
                         Toast.fire({
                             icon: 'success',
-                            title: 'Supplier updated successfully'
+                            title: 'Salary updated successfully'
                         });
 
 

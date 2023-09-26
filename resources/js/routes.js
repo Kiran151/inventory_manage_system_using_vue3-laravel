@@ -57,7 +57,7 @@ const routes = [
     { path: '/add_product/:id?', component: AddProduct},
     //salary
     { path: '/add_salary/:id?', component: AddSalary},
-    { path: '/all_salary/:id?', component: AllSalary},
+    { path: '/all_salary/', component: AllSalary},
 
 
 

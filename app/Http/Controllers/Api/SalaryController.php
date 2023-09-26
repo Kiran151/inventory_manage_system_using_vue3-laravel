@@ -41,8 +41,34 @@ class SalaryController extends Controller
 
     public function get()
     {
-        $data = Salary::all();
+        $data = Salary::with('employee')->get();
         return response()->json(['data' => $data]);
 
+    }
+
+    public function edit($id)
+    {
+
+        $data = Salary::find($id);
+        return $data;
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $data = Salary::find($id);
+        $data->update([
+            'employee_id' => $request->employee_id,
+            'date' => $request->date,
+            'amount' => $request->amount
+        ]);
+
+    }
+
+
+    public function delete($id)
+    {
+        Salary::find($id)->delete();
+        return 'success';
     }
 }

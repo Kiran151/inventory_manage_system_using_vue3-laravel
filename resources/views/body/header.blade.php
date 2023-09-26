@@ -236,10 +236,6 @@
                 </div>
             </li>
 
-            
-            <li>
-                <router-link to="/logout" class="text-white">logout</router-link>
-            </li>
 
             <li class="dropdown notification-list topbar-dropdown">
                 <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown"
@@ -276,10 +272,10 @@
                     <div class="dropdown-divider"></div>
 
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <router-link to="/logout" class="dropdown-item notify-item">
                         <i class="fe-log-out"></i>
                         <span>Logout</span>
-                    </a>
+                    </router-link>
 
                 </div>
             </li>

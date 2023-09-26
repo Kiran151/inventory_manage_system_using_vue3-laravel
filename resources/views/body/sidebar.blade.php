@@ -122,8 +122,7 @@
                         <router-link to="/all_salary">
                             <div class="d-flex align-items-center">
                                 <div class="app-box bg-gradient-blues text-white me-2">
-                                    <i class="mdi mdi-account-multiple-outline fs-3"></i>
-
+                                    <i class="mdi mdi-account-cash-outline fs-3"></i>
                                 </div>
                                 <span>Salary</span>
                             </div>

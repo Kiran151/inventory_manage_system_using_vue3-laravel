@@ -76,12 +76,19 @@ export default {
                             return `${meta.row + 1}`
                         }
                     },
-                    { data: 'employee_id' },
+                    { data: 'employee.name' },
                     {
                         data: 'amount'
                     },
                     {
-                        data: 'date'
+                        data: 'date',
+                        render: function (data, type, row, meta) {
+
+                            const [year, month] = data.split('-');
+                            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                            const formattedDate = `${monthNames[parseInt(month) - 1]}-${year}`;
+                            return formattedDate;
+                        }
                     },
                     {
                         data: null, orderable: false,
@@ -98,12 +105,12 @@ export default {
             });
         },
         deleteRow(id) {
-            DeleteAlert.deleteRow('api/category/delete/', id);
+            DeleteAlert.deleteRow('api/salary/delete/', id);
         },
         editRow(id) {
-            this.$router.push(`/add_category/${id}`)
+            this.$router.push(`/add_salary/${id}`)
 
-        }
+        },
     },
 };
 </script>

@@ -23,9 +23,9 @@
     <!-- Head js -->
     <script src="{{ asset('assets/js/head.js') }}"></script>
     <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
-    <!-- selectize-tags -->
-    
-    
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
     @vite(['resources/js/app.js', 'resources/css/app.css'])
@@ -171,7 +171,7 @@
 
         setInterval(checkTokenAndInactivity, 1000);
     </script>
- 
+
 </body>
 
 </html>

@@ -86,6 +86,12 @@ Route::controller(SalaryController::class)->group(function(){
     Route::post('salary/add_salary', 'add');
     Route::get('get_employee_salary/{id}', 'get_employee_salary');
     Route::get('salary/all_salary', 'get');
+    Route::get('salary/edit_salary/{id}', 'edit');
+    Route::patch('salary/update_salary/{id}', 'update');
+    Route::delete('salary/delete/{id}', 'delete');
+
+
+
 
 
    
