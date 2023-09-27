@@ -5,11 +5,11 @@
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Suppliers</a></li>
-                        <li class="breadcrumb-item active">All Suppliers</li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Category</a></li>
+                        <li class="breadcrumb-item active">All Category</li>
                     </ol>
                 </div>
-                <h4 class="page-title">All Suppliers</h4>
+                <h4 class="page-title">All Category</h4>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
                     <div class="d-flex justify-content-end">
                         <router-link to="/add_category">
                             <button type="button" class="btn btn-danger waves-effect waves-light mb-2">
-                                <i class="mdi mdi-plus-box me-1"></i> Add Supplier
+                                <i class="mdi mdi-plus-box me-1"></i> Add Category
                             </button>
                         </router-link>
 

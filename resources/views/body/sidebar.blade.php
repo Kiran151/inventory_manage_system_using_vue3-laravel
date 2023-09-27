@@ -47,7 +47,7 @@
 
                 <li class="menu-title">Navigation</li>
 
-                <li>
+                <li :class="$route.path == '/'?'bg-primary':''">
                     <a class="links">
                         <router-link to="/">
                             <div class="d-flex align-items-center">
@@ -61,7 +61,7 @@
 
                     </a>
                 </li>
-                <li>
+                <li :class="$route.path === '/all_employee'||$route.path === '/add_employee'?'bg-primary':''">
                     <a>
                         <router-link to="/all_employee">
                             <div class="d-flex align-items-center">
@@ -76,7 +76,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li :class="$route.path == '/all_supplier'?'bg-primary':''">
                     <a >
                         <router-link to="/all_supplier">
                         <div class="d-flex align-items-center">
@@ -89,7 +89,7 @@
                     </router-link>
                     </a>
                 </li>
-                <li>
+                <li :class="$route.path == '/all_category'?'bg-primary':''">
                     <a>
                         <router-link to="/all_category">
                             <div class="d-flex align-items-center">
@@ -103,7 +103,7 @@
 
                     </a>
                 </li>
-                 <li>
+                 <li :class="$route.path == '/all_products' ||$route.path == '/add_product'?'bg-primary':''">
                     <a>
                         <router-link to="/all_products">
                             <div class="d-flex align-items-center">
@@ -117,7 +117,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li :class="$route.path == '/all_salary'?'bg-primary':''">
                     <a>
                         <router-link to="/all_salary">
                             <div class="d-flex align-items-center">
@@ -130,9 +130,9 @@
 
                     </a>
                 </li>
-                <li>
+                <li :class="$route.path == '/all_customers'?'bg-primary':''">
                     <a>
-                        <router-link to="/">
+                        <router-link to="/all_customers">
                             <div class="d-flex align-items-center">
                                 <div class="app-box bg-gradient-blues text-white me-2">
                                     <i class="mdi mdi-account-multiple-outline fs-3"></i>

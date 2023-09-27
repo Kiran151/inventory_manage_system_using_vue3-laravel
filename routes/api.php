@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\CustomerController;
 use App\Http\Controllers\Api\EmployeeController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\SalaryController;
@@ -31,15 +32,15 @@ Route::group([
 
 ], function ($router) {
 
-    Route::post('login', [AuthController::class,'login']);
-    Route::post('register', [AuthController::class,'register']);
-    Route::post('logout',  [AuthController::class,'logout']);
-    Route::post('refresh', [AuthController::class,'refresh']);
-    Route::post('me', [AuthController::class,'me']);
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::post('refresh', [AuthController::class, 'refresh']);
+    Route::post('me', [AuthController::class, 'me']);
 
 });
 
-Route::controller(EmployeeController::class)->group(function(){
+Route::controller(EmployeeController::class)->group(function () {
     Route::get('employee/all_employees', 'all');
     Route::post('employee/add_employee/', 'add');
     Route::get('employee/edit_employee/{id}', 'edit');
@@ -50,7 +51,7 @@ Route::controller(EmployeeController::class)->group(function(){
 
 });
 
-Route::controller(SupplierController::class)->group(function(){
+Route::controller(SupplierController::class)->group(function () {
     Route::post('supplier/all_suppliers', 'get');
     Route::delete('supplier/delete/{id}', 'delete');
     Route::post('supplier/add_supplier/', 'add');
@@ -61,7 +62,7 @@ Route::controller(SupplierController::class)->group(function(){
 
 });
 
-Route::controller(CategoryController::class)->group(function(){
+Route::controller(CategoryController::class)->group(function () {
     Route::get('category/all_categories', 'get');
     Route::delete('category/delete/{id}', 'delete');
     Route::post('category/add_category/', 'add');
@@ -70,7 +71,7 @@ Route::controller(CategoryController::class)->group(function(){
 
 });
 
-Route::controller(ProductController::class)->group(function(){
+Route::controller(ProductController::class)->group(function () {
     Route::post('product/all_product', 'get');
     Route::post('product/add_product/', 'add');
     Route::delete('product/delete/{id}', 'delete');
@@ -82,7 +83,7 @@ Route::controller(ProductController::class)->group(function(){
 
 });
 
-Route::controller(SalaryController::class)->group(function(){
+Route::controller(SalaryController::class)->group(function () {
     Route::post('salary/add_salary', 'add');
     Route::get('get_employee_salary/{id}', 'get_employee_salary');
     Route::get('salary/all_salary', 'get');
@@ -92,7 +93,10 @@ Route::controller(SalaryController::class)->group(function(){
 
 
 
-
+});
+Route::controller(CustomerController::class)->group(function () {
+    Route::get('customer/all_customer', 'get');
+    Route::post('customer/add_customer', 'add');
 
    
 

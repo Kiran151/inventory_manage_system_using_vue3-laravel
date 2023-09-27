@@ -40,6 +40,11 @@ return [
             'root' => public_path('uploads/product'),
             'throw' => false,
         ],
+        'customer' => [
+            'driver' => 'local',
+            'root' => public_path('uploads/customer'),
+            'throw' => false,
+        ],
 
         'public' => [
             'driver' => 'local',

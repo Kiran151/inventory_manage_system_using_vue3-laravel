@@ -21,6 +21,9 @@ import AddProduct from "./components/product/AddProduct.vue";
 //salary
 import AddSalary from "./components/salary/AddSalary.vue";
 import AllSalary from "./components/salary/AllSalary.vue";
+//customer
+import AddCustomer from "./components/customer/AddCustomer.vue";
+import AllCustomer from "./components/customer/AllCustomer.vue";
 
 
 
@@ -58,6 +61,9 @@ const routes = [
     //salary
     { path: '/add_salary/:id?', component: AddSalary},
     { path: '/all_salary/', component: AllSalary},
+     //customer
+     { path: '/add_customer/:id?', component: AddCustomer},
+     { path: '/all_customers/', component: AllCustomer},
 
 
 

@@ -39,15 +39,15 @@
 	background: linear-gradient(to right, #0f2027, #203a43, #2c5364)!important
 }
 a.router-link-exact-active{
-	color: #04c0ff;
+	color: #ffffff;
   }
 
   li a {
 	color: grey
   }
-  li a :hover{
+  /* li a :hover{
 	color: #535454;
-  }
+  } */
   /* image picker  */
   .image-container {
     position: relative;

@@ -171,6 +171,11 @@
 
         setInterval(checkTokenAndInactivity, 1000);
     </script>
+    <script>
+        $(function() {
+            $('.pro-user-name').html(User.name());
+        })
+    </script>
 
 </body>
 
